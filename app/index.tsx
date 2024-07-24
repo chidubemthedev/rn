@@ -8,6 +8,8 @@ export default function Index() {
         onPress={() => {
           console.log("button pressed!");
         }}
+        color="midnightblue"
+        disabled
       />
     </View>
   );
