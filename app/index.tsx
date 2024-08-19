@@ -19,7 +19,8 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "space-around",
+    flexDirection: "row",
+    alignItems: "baseline",
     borderWidth: 6,
     borderColor: "red",
   },
