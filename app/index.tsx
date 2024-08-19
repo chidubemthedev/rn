@@ -8,10 +8,10 @@ export default function Index() {
       <Box style={{ backgroundColor: "black" }}>Box 1 </Box>
       <Box style={{ backgroundColor: "green" }}>Box 2 </Box>
       <Box style={{ backgroundColor: "blue" }}>Box 3 </Box>
-      <Box style={{ backgroundColor: "yellow" }}>Box 4 </Box>
+      {/* <Box style={{ backgroundColor: "yellow" }}>Box 4 </Box>
       <Box style={{ backgroundColor: "purple" }}>Box 5 </Box>
       <Box style={{ backgroundColor: "pink" }}>Box 6 </Box>
-      <Box style={{ backgroundColor: "orange" }}>Box 7 </Box>
+      <Box style={{ backgroundColor: "orange" }}>Box 7 </Box> */}
     </View>
   );
 }
@@ -19,7 +19,7 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: "row",
+    justifyContent: "space-around",
     borderWidth: 6,
     borderColor: "red",
   },
