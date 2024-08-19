@@ -5,10 +5,19 @@ import { StyleSheet, Text, View } from "react-native";
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Box style={{ backgroundColor: "black" }}>Box 1</Box>
+      <Box style={{ backgroundColor: "black", top: 75, left: 75 }}>Box 1</Box>
       <Box style={{ backgroundColor: "green" }}>Box 2</Box>
       <Box style={{ backgroundColor: "blue" }}>Box 3</Box>
-      <Box style={{ backgroundColor: "yellow" }}>Box 4</Box>
+      <Box
+        style={{
+          backgroundColor: "yellow",
+          position: "absolute",
+          top: 100,
+          left: 100,
+        }}
+      >
+        Box 4
+      </Box>
       <Box style={{ backgroundColor: "purple" }}>Box 5</Box>
       <Box style={{ backgroundColor: "pink" }}>Box 6</Box>
       <Box style={{ backgroundColor: "orange" }}>Box 7</Box>
