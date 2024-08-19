@@ -11,7 +11,7 @@ export default function Index() {
       <Box style={{ backgroundColor: "yellow" }}>Box 4</Box>
       <Box style={{ backgroundColor: "purple" }}>Box 5</Box>
       <Box style={{ backgroundColor: "pink" }}>Box 6</Box>
-      <Box style={{ backgroundColor: "orange", flex: 1 }}>Box 7</Box>
+      <Box style={{ backgroundColor: "orange" }}>Box 7</Box>
     </View>
   );
 }
@@ -20,8 +20,11 @@ const styles = StyleSheet.create({
   container: {
     height: 300,
     flexWrap: "wrap",
+    // rowGap: 20,
+    // columnGap: 30,
+    gap: 10,
     // flex: 1,
-    flexDirection: "row",
+    // flexDirection: "row",
     // alignItems: "flex-end",
     borderWidth: 6,
     borderColor: "red",
