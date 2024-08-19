@@ -1,41 +1,36 @@
 import Box from "@/components/Box";
 import Greet from "@/components/Greet";
-import { StyleSheet, Text, View, useWindowDimensions } from "react-native";
+import { SafeAreaView, StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
-  const { width, height, fontScale } = useWindowDimensions();
-
   return (
-    <View style={styles.container}>
-      <View
-        style={[
-          styles.box,
-          {
-            width: width > 500 ? "70%" : "90%",
-            height: height > 600 ? "60%" : "90%",
-          },
-        ]}
-      >
-        <Text style={{ fontSize: fontScale * 50 }}>
-          {width} x {height} x {fontScale}
-        </Text>
+    <SafeAreaView style={styles.safeContainer}>
+      <View style={styles.container}>
+        <View style={styles.box}>
+          <Text style={styles.text}>Hello, World! </Text>
+        </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  safeContainer: {
+    flex: 1,
+    backgroundColor: "plum",
+  },
   container: {
     flex: 1,
     backgroundColor: "plum",
-    alignItems: "center",
-    justifyContent: "center",
+    // alignItems: "center",
+    // justifyContent: "center",
   },
   box: {
-    // width: windowWidth > 500 ? "70%" : "90%",
-    // height: windowHeight > 600 ? "60%" : "90%",
-    backgroundColor: "lightblue",
-    alignItems: "center",
-    justifyContent: "center",
+    padding: 10,
+  },
+  text: {
+    fontSize: 24,
+    fontWeight: "bold",
+    textAlign: "center",
   },
 });
